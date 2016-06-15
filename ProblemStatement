@@ -1,0 +1,31 @@
+You will implement a framework for CPU scheduling with three scheduling algorithms: FIFO, round robin, and shortest remaining job first (SRJF). Jobs arrive at the CPU scheduler at arbitrary times ranging from 1 to 20 time slots and at least 15 jobs. When a job arrives, its computation time is known. Assume that all jobs involve only computation, and perform no Input/Output. Jobs thus need to run on the CPU for a total duration equal to their known computation times. When they complete, they leave the system.
+
+Brief descriptions of three algorithms
+
+FIFO Jobs are processed on a first-in-first-out basis.
+Round-robin time-slicing Pick head of queue, run a job for a time quantum, preempt it, run the next one and so on. A new job goes at the tail of the queue and so does a preempted one. If a new job arrives at the same time as a time quantum completes, the new job goes at the end of the queue.
+Shortest Remaining Job First – This is a preemptive scheduling algorithm. If there is more than one job, select the one with the shortest execution time. If a new job has shorter REMAINING time, preempt current job and switch to new one.
+
+Solution Specification:
+The input to your program will be a file containing job IDs with their arrival times and required computation times.
+Input Format The input command line format should be as follows (where sched is the name of your executable):
+sched [-v] -[Rk|S|F] [-f <filename> |-r n]
+Where the command-line flag:
+ R is round robin, k is an integer specifying the time-slice
+ S is shortest job first
+ F is FIFO
+ The -v option indicates a verbose output mode (i.e. more information is displayed)
+ The –r option indicates creating n jobs randomly whose format is the same as filename
+ The –f <filename> is the name of the input file whose format is described below
+ The -v option indicates a verbose output mode (i.e. more information is displayed)
+ The –r option indicates creating n jobs randomly whose format is the same as filename
+ The –f <filename> is the name of the input file whose format is described below
+
+Format of the input file You must use the following format for your input to enable us to grade your project easily. The file must contain the description of one process per line where each line has the following fields (all fields are integers separated by “,”) in the following order:
+id: The id of the job arrival time: Arrival time of the job after start of simulation comptime: Computation time (CPU Burst time)
+A sample input file looks like this:
+
+0,9,25 
+1,17,10
+2,32,7
+3,35,20
