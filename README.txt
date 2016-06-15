@@ -1,4 +1,4 @@
-Name : Priya Joshi					UB ID: 0977510
+
 
 CPU Scheduling
 Features:
