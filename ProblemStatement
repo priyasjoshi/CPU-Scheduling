@@ -1,4 +1,8 @@
-You will implement a framework for CPU scheduling with three scheduling algorithms: FIFO, round robin, and shortest remaining job first (SRJF). Jobs arrive at the CPU scheduler at arbitrary times ranging from 1 to 20 time slots and at least 15 jobs. When a job arrives, its computation time is known. Assume that all jobs involve only computation, and perform no Input/Output. Jobs thus need to run on the CPU for a total duration equal to their known computation times. When they complete, they leave the system.
+You will implement a framework for CPU scheduling with three scheduling algorithms: FIFO, round robin, and shortest remaining job first
+(SRJF). Jobs arrive at the CPU scheduler at arbitrary times ranging from 1 to 20 time slots and at least 15 jobs. 
+When a job arrives, its computation time is known. Assume that all jobs involve only computation, and perform no Input/Output. 
+Jobs thus need to run on the CPU for a total duration equal to their known computation times. 
+When they complete, they leave the system.
 
 Brief descriptions of three algorithms
 
