@@ -27,4 +27,4 @@ How to Run :
 - The program can be run into an eclipse for c++ IDE
 - Or alternatively .exe can be found in a prijoshi0977510_Project1/Debug folder named as Scheduler
 - Run the file and enter commandline arguments for desired output.
-- Source files can be found in prijoshi0977510_Project1/Sources
+- Source files can be found in CPU Scheduling/Sources
